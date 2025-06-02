@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pet Parents </title>
+   <link rel="stylesheet" href="styles.css" />
+   
+</head>
+<body>
+ <div id="cart-icon-container" onclick="window.location.href='Pet cart.html'">
+    🛒 <span id="cart-count">0</span>
+  </div>
+
+ <header>
+    <h1>Pet Parents</h1>
+  </header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="Eat 3.html">Eat</a>
+    <a href="Walk 3.html">Walk</a>
+    <a href="Wear 3.html">Wear</a>
+    <a href="Play 3.html">Play</a>
+    <a href="Sale 3.html">Sale</a>
+    <a href="Pet cart.html">Cart</a>
+  </nav>
+
+  <main>
+ <p style="text-align: center; font-weight: bold;">
+ Sale
+   </p> 
+    <div class="product-grid">
+      <div class="product-card" onclick="addToCart('Hot Dog! plush dog ', 320, 'https://via.placeholder.com/250', 'M', 1)">
+        <img src= "C:\Users\Chenesani\Downloads\WMD\Hot Dog! plush dog on sale.png" alt="Hot Dog! plush dog " />
+        <p class="product-name">Hot Dog! plush dog </p>
+        <p class="price">BWP 20.00</p>
+      </div>
+	  <div class="product-card" onclick="addToCart('Tennis ball pack', 320, 'https://via.placeholder.com/250', 'M', 1)">
+        <img src= "C:\Users\Chenesani\Downloads\WMD\For sale tennis balls.png" alt="Tennis ball pack" />
+        <p class="product-name">Tennis ball pack</p>
+        <p class="price">BWP 20.00</p>
+      </div>
+	  <div class="product-card" onclick="addToCart('Piggy Smalls Squeaky Plush dog toy', 320, 'https://via.placeholder.com/250', 'M', 1)">
+        <img src= "C:\Users\Chenesani\Downloads\WMD\Piggy Smalls Squeaky Plush dog toy.png" alt="Piggy Smalls Squeaky Plush dog toy" />
+        <p class="product-name">Piggy Smalls Squeaky Plush dog toy</p>
+        <p class="price">BWP 30.00</p>
+      </div>
+	 	  <div class="product-card" onclick="addToCart('Dino dog toy', 320, 'https://via.placeholder.com/250', 'M', 1)">
+        <img src="C:\Users\Chenesani\Downloads\WMD\Dino dog toy.png"alt="Dino dog toy" />
+        <p class="product-name">Dino dog toy</p>
+        <p class="price">BWP 50.00</p>
+      </div> 
+    </div>
+  </main>
+
+ <footer>
+    <div style="display: flex; flex-wrap: wrap; justify-content: space-around; max-width: 1000px; margin: auto;">
+      <div style="margin: 1em;">
+        <h3 style="border-bottom: 1px solid #fff; padding-bottom: 0.5em;">ABOUT & CONTACT</h3>
+        <ul style="list-style: none; padding: 0;">
+          <li><a href="About us.html" style="color:white;">Who We Are</a></li>
+          <li><a href="Contact us.html" style="color:white;">Contact Us</a></li>
+        </ul>
+      </div>
+      <div style="margin: 1em;">
+        <h3 style="border-bottom: 1px solid #fff; padding-bottom: 0.5em;">MORE TREATS</h3>
+        <ul style="list-style: none; padding: 0;">
+          <li><a href="FAQ.html" style="color:white;">FAQs</a></li>
+          <li><a href="Blog.html" style="color:white;">Blog</a></li>
+          <li><a href="Veterinary Services.html" style="color:white;">Vetrinary Services</a></li>
+        </ul>
+      </div
+	  <div style="display: flex; flex-wrap: wrap; justify-content: space-around; max-width: 1000px; margin: auto;">
+      <div style="margin: 1em;">
+        <h3 style="border-bottom: 1px solid #fff; padding-bottom: 0.5em;">FOLLOW US</h3>
+        <ul style="list-style: none; padding: 0;">
+          <li><a href="https://www.facebook.com/" style="color:white;">Facebook</a></li>
+          <li><a href="https://www.instagram.com/" style="color:white;">Instagram</a></li>
+        </ul>
+      </div>
+    </div>
+    <p style="text-align: center; margin-top: 2em;">&copy; 2025 Pet Parents. All rights reserved.</p>
+  </footer>
+ <script src="Pet cart.js"></script>
+</body>
+</html>

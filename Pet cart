@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pet Parents | Cart</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    header, footer {
+      background-color: #222;
+      color: #fff;
+      padding: 1em;
+      text-align: center;
+    }
+    nav {
+      background-color: #444;
+      padding: 0.5em;
+      text-align: center;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 1em;
+      text-decoration: none;
+    }
+    main {
+      padding: 2em;
+      max-width: 1200px;
+      margin: auto;
+     ;
+    }
+    .cart-item {
+      border-bottom: 1px solid #ddd;
+      padding: 0.5em 0;
+      display: flex;
+      align-items: center;
+    }
+    .cart-item img {
+      width: 50px;
+      height: 50px;
+      margin-right: 1em;
+    }
+    .cart-item p {
+      margin: 0;
+    }
+    .cart-total {
+      font-weight: bold;
+      margin-top: 1em;
+    }
+    .checkout-form {
+      margin-top: 2em;
+    }
+    .checkout-form input,
+    .checkout-form textarea {
+      width: 100%;
+      padding: 0.5em;
+      margin: 0.5em 0;
+      border: 1px solid #ddd;
+    }
+    .checkout-form button {
+      padding: 1em;
+      background-color: #444;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Pet Parents</h1>
+  </header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="Eat 3.html">Eat</a>
+    <a href="Walk 3.html">Walk</a>
+    <a href="Wear 3.html">Wear</a>
+    <a href="Play 3.html">Play</a>
+    <a href="Sale 3.html">Sale</a>
+    <a href="Cart.html">Cart</a>
+  </nav>
+
+  <main>
+    <h2>Shopping Cart</h2>
+    <div id="cart-items"></div>
+    <p class="cart-total">Total: BWP <span id="cart-total">0.00</span></p>
+    <button onclick="checkout()">Checkout</button>
+
+    <div class="checkout-form" id="checkout-form" style="display: none;">
+      <h3>Checkout Form</h3>
+      <input type="text" id="name" placeholder="Full Name" required />
+      <input type="email" id="email" placeholder="Email" required />
+      <input type="text" id="address" placeholder="Shipping Address" required />
+      <textarea id="notes" placeholder="Additional Notes"></textarea>
+      <button onclick="submitCheckout()">Submit Order</button>
+    </div>
+  </main>
+
+<footer>
+    <div style="display: flex; flex-wrap: wrap; justify-content: space-around; max-width: 1000px; margin: auto;">
+      <div style="margin: 1em;">
+        <h3 style="border-bottom: 1px solid #fff; padding-bottom: 0.5em;">ABOUT & CONTACT</h3>
+        <ul style="list-style: none; padding: 0;">
+          <li><a href="About us.html" style="color:white;">Who We Are</a></li>
+          <li><a href="Contact us.html" style="color:white;">Contact Us</a></li>
+        </ul>
+      </div>
+      <div style="margin: 1em;">
+        <h3 style="border-bottom: 1px solid #fff; padding-bottom: 0.5em;">MORE TREATS</h3>
+        <ul style="list-style: none; padding: 0;">
+          <li><a href="FAQ.html" style="color:white;">FAQs</a></li>
+          <li><a href="Blog.html" style="color:white;">Blog</a></li>
+          <li><a href="Veterinary Services.html" style="color:white;">Vetrinary Services</a></li>
+        </ul>
+      </div>
+	  <div style="display: flex; flex-wrap: wrap; justify-content: space-around; max-width: 1000px; margin: auto;">
+      <div style="margin: 1em;">
+        <h3 style="border-bottom: 1px solid #fff; padding-bottom: 0.5em;">FOLLOW US</h3>
+        <ul style="list-style: none; padding: 0;">
+          <li><a href="About us.html" style="color:white;">Facebook</a></li>
+          <li><a href="#" style="color:white;">Instagram</a></li>
+        </ul>
+      </div>
+    </div>
+    <p style="text-align: center; margin-top: 2em;">&copy; 2025 Pet Parents. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
+
+

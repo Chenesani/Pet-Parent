@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pet Parents - Frequently Asked Questions</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f7f7f7;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #222;
+      color: white;
+      padding: 1em;
+      text-align: center;
+    }
+    nav {
+      background-color: #444;
+      padding: 0.5em;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 1em;
+      text-decoration: none;
+    }
+    main {
+      padding: 2em;
+      max-width: 1000px;
+      margin: auto;
+      background-color: white;
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    .accordion {
+      background-color: #ddd;
+      color: #444;
+      cursor: pointer;
+      padding: 1em;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 1.1em;
+      margin: 0.5em 0;
+      border-radius: 5px;
+    }
+    .accordion.active, .accordion:hover {
+      background-color: #bbb;
+    }
+    .panel {
+      padding: 0 1em;
+      display: none;
+      background-color: #f1f1f1;
+      border-left: 3px solid #444;
+      margin-bottom: 1em;
+    }
+  </style>
+</head>
+<body>
+
+ <header>
+  <h1 style="color: white;">Pet Parents</h1>
+</header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="Eat 3.html">Eat</a>
+    <a href="Walk 3.html">Walk</a>
+    <a href="Wear 3.html">Wear</a>
+    <a href="Play 3.html">Play</a>
+    <a href="Sale 3.html">Sale</a>
+    <a href="Cart.html">Cart</a>
+  </nav>
+
+  <main>
+    <h1>Frequently Asked Questions</h1>
+
+    <button class="accordion">How can I visit your stores?</button>
+    <div class="panel">
+      <p>We do not have physcal stores but you can reach us through our tel and phone numbers. Our hours are Monday–Friday from 9am–6pm and Saturday–Sunday from 11am–6pm.</p>
+    </div>
+
+    <button class="accordion">How do I know which size to order for my dog?</button>
+    <div class="panel">
+      <p> Please measure your pet with a tape measure and send us the dimensions on the section of further notes on the checkout form. If you need assistance, contact us at info@petparents.com.</p>
+    </div>
+
+    <button class="accordion">How much is shipping?</button>
+    <div class="panel">
+      <p>All domestic orders ship for a flat rate of BWP30.00. International shipping rates vary; please contact us for more information.</p>
+    </div>
+
+    <button class="accordion">When will my order ship?</button>
+    <div class="panel">
+      <p>Most orders ship within 3-5 business days. You will receive an email with tracking information once your order has shipped.</p>
+    </div>
+
+    <button class="accordion">Can I return or exchange an item?</button>
+    <div class="panel">
+      <p>Returns and exchanges are accepted within 14 days of purchase for new, unused items. Certain items, like food and grooming products, are non-returnable. Please contact us for more details.</p>
+    </div>
+
+    <button class="accordion">Do you offer international shipping?</button>
+    <div class="panel">
+      <p>Yes, we offer international shipping. Rates and delivery times vary by destination. Please contact us for more information.</p>
+    </div>
+  </main>
+
+    <footer style="background-color: black; color: white; padding: 2em 0;">
+    <div style="display: flex; flex-wrap: wrap; justify-content: space-around; max-width: 1000px; margin: auto;">
+      <div style="margin: 1em;">
+        <h3 style="border-bottom: 1px solid #fff; padding-bottom: 0.5em;">ABOUT & CONTACT</h3>
+        <ul style="list-style: none; padding: 0;">
+          <li><a href="About us.html" style="color:white;">Who We Are</a></li>
+          <li><a href="Contact us.html" style="color:white;">Contact Us</a></li>
+        </ul>
+      </div>
+      <div style="margin: 1em;">
+        <h3 style="border-bottom: 1px solid #fff; padding-bottom: 0.5em;">MORE TREATS</h3>
+        <ul style="list-style: none; padding: 0;">
+          <li><a href="FAQ.html" style="color:white;">FAQs</a></li>
+          <li><a href="Blog.html" style="color:white;">Blog</a></li>
+          <li><a href="Veterinary Services.html" style="color:white;">Veterinary Services</a></li>
+        </ul>
+      </div>
+      <div style="margin: 1em;">
+        <h3 style="border-bottom: 1px solid #fff; padding-bottom: 0.5em;">FOLLOW US</h3>
+        <ul style="list-style: none; padding: 0;">
+          <li><a href="#" style="color:white;">Facebook</a></li>
+          <li><a href="#" style="color:white;">Instagram</a></li>
+        </ul>
+      </div>
+    </div>
+    <p style="text-align: center; margin-top: 2em;">&copy; 2025 Pet Parents. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.querySelectorAll('.accordion').forEach((accordion) => {
+      accordion.addEventListener('click', () => {
+        accordion.classList.toggle('active');
+        const panel = accordion.nextElementSibling;
+        if (panel.style.display === 'block') {
+          panel.style.display = 'none';
+        } else {
+          panel.style.display = 'block';
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
